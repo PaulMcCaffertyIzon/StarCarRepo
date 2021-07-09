@@ -7,6 +7,16 @@
 	Layout = "Master.cshtml";
 }
 
-@* the fun starts here *@
+<div class="" style="color: @Model.ColourName">
 
-@Model.Title
+    <h1>@Model.Title</h1>
+    <p>@Model.MainContent</p>
+
+    <p>Your Favourite Color: @Model.ColourName</p>
+
+</div>
+
+@if (Model.ShowImage)
+{
+    <img src="~/Media/Images/r34.jpg" title="R34 Skyline"/>
+}
