@@ -434,6 +434,8 @@
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="js\scripts.js" />
+    <Content Include="Media\Images\camaro.jpg" />
+    <Content Include="Media\Images\logo.png" />
     <Content Include="Media\Images\r34.jpg" />
     <Content Include="post.html" />
     <Content Include="Web.config" />
