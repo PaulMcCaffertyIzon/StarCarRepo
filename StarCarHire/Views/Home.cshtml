@@ -7,89 +7,43 @@
     Layout = "Master.cshtml";
 }
 
+<!--Body-->
 
-<!-- Page Header-->
-<header class="masthead" style="background-image: url('Media/Images/camaro.jpg'); height: 100%;">
-    <div class="container position-relative px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <div class="site-heading">
-                    <img src="~/Media/Images/logo.png" style="color: #ffffff;" />
+        <section class="grid-container full padding-top padding-bottom relative hybrid-flex-sm hybrid-flex-hc-sm hybrid-flex-vc-sm landing wow fadeIn">
+            <div class="grid-container" style="width:100%;">
+                <div class="grid-x grid-padding-x padding-bottom">
+                    <div class="small-12 medium-8 medium-offset-2 large-6 large-offset-3 cell text-center wow fadeIn" data-wow-delay=".1s">
+                        <a class="company-logo" href="home.html" title="StarCar Hire">
+                            <img src="~/assets/images/company-logo.svg" alt="StarCar Hire"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-x grid-padding-x">
+                    <div class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 cell wow fadeIn" data-wow-delay=".2s">
+                        <form action="" method="">
+                            <div class="grid-x grid-padding-x">
+                                <div class="small-12 medium-6 cell">
+                                    <label for="postcode">Enter Your Postcode:</label>
+                                    <input id="postcode" name="postcode" type="text" placeholder="BT12 3AB"/>
+                                </div>
+                                <div class="small-12 medium-6 cell">
+                                    <label for="vehicle">I'm Hiring A Vehicle For:</label>
+                                    <div class="hybrid-flex-sm space-between">
+                                        <button id="vehicle" class="wedding" name="vehicle" type="submit">Wedding</button>
+                                        <button id="vehicle" class="media" name="vehicle" type="submit">Media/Event</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="grid-x grid-padding-x disclaimer wow fadeIn" data-wow-delay=".3s">
+                    <div class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 cell text-center">
+                        <h6>
+                            <a href="">starcarhire.co.uk</a>
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis dolor purus. Nulla aliquot condimentum suscipit. Sed condimentum mattis dictum. Vestibulum euismod Bibendum dolor eu ultricies. In massa tortor, vestibulum in ultricies ut, blandit quis turpis. Nulla ac aliquam tortor. Suspendisse in lorem augue, at aliquam leo. Etiam vitae turpis lorem, at accumsan nulla. Fusce et enim a lacus adipiscing ultrices eget vel felis. Ut ut nisi ac risus posuere mollis ac at ante. Phasellus ullamcorper Bibendum mollis. In vitae tellus at libero egestas vnenatis id eget lectus.</p>
+                    </div>
                 </div>
             </div>
-            <form>
-                <div class="col-md-offset-2 col-md-5">
-                    <input type="submit" value="Save" class="btn btn-default" id="savebtn" />
-                </div>
-                <div class="col-md-5">
-                    @Html.TextBoxFor(m => m.Title)
-                </div>
-                <div class="col-md-5">
-                    <input type="submit" value="Insert" name='button' />                
-                </div>
-            </form>
-        </div>
-    </div>
-</header>
-<!-- Main Content-->
-<div class="container px-4 px-lg-5">
-    <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-md-10 col-lg-8 col-xl-7">
-            <!-- Post preview-->
-            <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
-                    <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
-                </a>
-                <p class="post-meta">
-                    Posted by
-                    <a href="#!">Start Bootstrap</a>
-                    on September 24, 2021
-                </p>
-            </div>
-            <!-- Divider-->
-            <hr class="my-4" />
-            <!-- Post preview-->
-            <div class="post-preview">
-                <a href="post.html"><h2 class="post-title">I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2></a>
-                <p class="post-meta">
-                    Posted by
-                    <a href="#!">Start Bootstrap</a>
-                    on September 18, 2021
-                </p>
-            </div>
-            <!-- Divider-->
-            <hr class="my-4" />
-            <!-- Post preview-->
-            <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">Science has not yet mastered prophecy</h2>
-                    <h3 class="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
-                </a>
-                <p class="post-meta">
-                    Posted by
-                    <a href="#!">Start Bootstrap</a>
-                    on August 24, 2021
-                </p>
-            </div>
-            <!-- Divider-->
-            <hr class="my-4" />
-            <!-- Post preview-->
-            <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">Failure is not an option</h2>
-                    <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
-                </a>
-                <p class="post-meta">
-                    Posted by
-                    <a href="#!">Start Bootstrap</a>
-                    on July 8, 2021
-                </p>
-            </div>
-            <!-- Divider-->
-            <hr class="my-4" />
-            <!-- Pager-->
-            <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
-        </div>
-    </div>
-</div>
+        </section>

@@ -1,0 +1,142 @@
+/**
+* Hybrid
+* Starter Theme.
+* Created by Anonymous.
+*/
+
+/**
+* _header - Small.
+*/
+.header {
+	z-index: 1;
+
+	.company-logo {
+		display: inline-block;
+
+		img {
+			width: 120px;
+		}
+	}
+
+	nav {
+		ul {
+			margin: 0;
+			list-style: none;
+
+			li {
+				margin: 0rem 1.875rem 0rem 0rem;
+
+				a {
+					padding: 0;
+					color: $companyColourOne;
+					text-transform: uppercase;
+				}
+
+				&:last-of-type {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	form {
+		min-width: calc(320px - .625rem * 2);
+		height: 40px;
+		bottom: -20px;
+		right: .625rem;
+
+		label {
+			height: 40px;
+			padding: 0rem calc(1rem + 10px) 0rem 1rem;
+			margin: 0px -10px 0px 0px;
+			background-color: darken($companyLightGrey, 10%);
+			border: 1px solid darken($companyLightGrey, 20%);
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+			color: $white;
+			font-family: 'Segoe UI';
+			font-size: 14px;
+			font-weight: 400;
+			font-style: normal;
+			line-height: 38px;
+		}
+
+		input {
+			height: 40px;
+			margin: 0;
+			background-color: $white;
+			border: 1px solid darken($companyLightGrey, 20%);
+			border-radius: 10px;
+			color: $companyColourOne;
+			font-family: 'Segoe UI';
+			font-size: 14px;
+			font-weight: 400;
+			font-style: normal;
+			line-height: 38px;
+		}
+
+		i {
+			right: 1rem;
+		}
+	}
+
+	.grid-container {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+}
+
+/**
+* _header - Medium.
+*/
+@media screen and (min-width: 640px) {
+    .header {
+		.company-logo {
+			img {
+				width: 180px;
+			}
+		}
+
+		form {
+			min-width: 444px;
+			right: .9375rem;
+		}
+
+		.grid-container {
+			padding-top: 37.5px;
+			padding-bottom: 37.5px;
+		}
+	}
+}
+
+/**
+* _header - Large.
+*/
+@media screen and (min-width: 1024px) {
+    .header {
+		.company-logo {
+			img {
+				width: 240px;
+			}
+		}
+
+		.grid-container {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+	}
+}
+
+/**
+* _header - XL.
+*/
+@media screen and (min-width: 1200px) {
+    
+}
+
+/**
+* _header - XXL.
+*/
+@media screen and (min-width: 1440px) {
+    
+}

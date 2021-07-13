@@ -1,0 +1,197 @@
+/**
+* Hybrid
+* Starter Theme.
+* Created by Anonymous.
+*/
+
+/**
+* _effects - Small.
+*/
+/* Links. */
+.text-link {
+    padding: 3px 0px 3px 0px;
+    position: relative;
+    display: block;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+
+    &:before,
+    &:after {
+        width: 0;
+        height: 1px;
+        top: calc(100% + 6px);
+        right: 0;
+        position: absolute;
+        content: '';
+    }
+
+    &:before {
+        background-color: rgba($companyColourOne, .3);
+        transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+    }
+
+    &:after {
+        background-color: rgba($companyColourOne, 1);
+        transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+    }
+}
+
+/* Buttons. */
+.materialize-button {
+    height: 60px;
+    padding: 0rem 2rem 0rem 2rem;
+    position: relative;
+    display: inline-block;
+    // background-color: $;
+    border-radius: 30px;
+    // box-shadow: 0px 0px 0px $;
+    // color: $;
+    // font-family: $;
+    // font-size: ;
+    // font-weight: ;
+    // font-style: ;
+    // line-height: ;
+    text-align: center;
+    overflow: hidden;
+    transition: .4s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+
+    span {
+        &.ripple {
+            transform: scale(.25);
+            position: absolute;
+            background-color: rgba($black, .25);
+            border-radius: 100%;
+            opacity: 0;
+            pointer-events: none;
+            animation: ripple .8s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+        }
+    }
+
+    &.ghost {
+        background-color: transparent;
+        // border: 1px solid $;
+        // color: $;
+    }
+
+    &:focus {
+        // color: $;
+    }
+}
+
+@keyframes ripple {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* Wow. */
+.wow {
+    visibility: hidden;
+}
+
+.fadeIn {
+    @include fadeIn(
+        $function: cubic-bezier(0.51, 0.18, 0, 0.88)
+    );
+}
+
+.fadeInUp {
+    @include fadeInUp(
+        $function: cubic-bezier(0.51, 0.18, 0, 0.88)
+    );
+}
+
+.fadeInLeft {
+    @include fadeInLeft(
+        $function: cubic-bezier(0.51, 0.18, 0, 0.88)
+    );
+}
+
+.fadeInRight {
+    @include fadeInRight(
+        $function: cubic-bezier(0.51, 0.18, 0, 0.88)
+    );
+}
+
+.flipInX {
+    @include flipInX(
+        $function: cubic-bezier(0.51, 0.18, 0, 0.88)
+    );
+}
+
+.flipInY {
+    @include flipInY(
+        $function: cubic-bezier(0.51, 0.18, 0, 0.88)
+    );
+}
+
+.zoomOut {
+    @include zoomOut(
+        $duration: 1.2s,
+        $function: cubic-bezier(0.51, 0.18, 0, 0.88)
+    );
+}
+
+/* Block Reveal. */
+/* .block-reveal-element {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    // background-color: $;
+    opacity: 0;
+    pointer-events: none;
+} */
+
+/**
+* _effects - Medium.
+*/
+@media screen and (min-width: 640px) {
+    
+}
+
+/**
+* _effects - Large.
+*/
+@media screen and (min-width: 1024px) {
+    /* Links. */
+    .text-link {
+        &:hover {
+            &:before, &:after {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+
+    /* Buttons. */
+    .materialize-button {
+        &:hover {
+            // box-shadow: 3px 3px 12px $;
+            // color: $;
+        }
+    }
+}
+
+/**
+* _effects - XL.
+*/
+@media screen and (min-width: 1200px) {
+    
+}
+
+/**
+* _effects - XXL.
+*/
+@media screen and (min-width: 1440px) {
+    
+}

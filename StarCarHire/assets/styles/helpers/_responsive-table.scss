@@ -1,0 +1,80 @@
+/**
+* Hybrid
+* Starter Theme.
+* Created by Anonymous.
+*/
+
+/**
+* Responsive Table.
+* Smaller than [change "max-width: 639px" to whatever you require].
+* Add class responsive-table to table element, e.g. <table class="responsive-table">.
+*/
+
+/**
+* _responsive-table - Small.
+*/
+@media screen and (max-width: 639px) {
+    /* Responsive Table. */
+	.responsive-table {
+		table, thead, tbody, tr, th, td {
+			display: block;
+		}
+
+		th {
+			top: -9999px;
+			left: -9999px;
+			position: absolute;
+		}
+
+		td {
+			position: relative;
+			text-align: right;
+
+			&:before {
+				width: 50%;
+				left: 0;
+				position: absolute;
+				text-align: left;
+			}
+
+			&:nth-of-type(1) {
+				&:before {
+					// font-family: $;
+					// font-size: ;
+					// font-weight: ;
+					// font-style: ;
+					// line-height: ;
+					content: 'Title';
+				}
+			}
+		}
+	}
+}
+
+/**
+* _responsive-table - Medium.
+*/
+@media screen and (min-width: 640px) {
+    
+}
+
+/**
+* _responsive-table - Large.
+*/
+@media screen and (min-width: 1024px) {
+    
+}
+
+/**
+* _responsive-table - XL.
+*/
+@media screen and (min-width: 1200px) {
+    
+}
+
+/**
+* _responsive-table - XXL.
+*/
+@media screen and (min-width: 1440px) {
+    
+}

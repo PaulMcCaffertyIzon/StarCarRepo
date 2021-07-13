@@ -1,0 +1,114 @@
+/**
+* Hybrid
+* Starter Theme.
+* Created by Anonymous.
+*/
+
+/**
+* _checklist - max-width: 639px.
+*/
+@media screen and (max-width: 639px) {
+    .landing {
+        form {
+            input {
+                &#postcode {
+                    margin-bottom: 1.25rem;
+                }
+            }
+        }
+    }
+
+    .header {
+        nav {
+            ul {
+                flex-direction: column;
+
+                li {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .filters {
+        span:not(.slider-handle):not(.slider-fill) {
+            font-size: 12px !important;
+        }
+
+        .price {
+            margin: 25px 0px 0px 0px;
+        }
+    }
+
+    .cars {
+        .car {
+            .buttons {
+                button {
+                    font-size: 12px !important;
+                }
+            }
+        }
+
+        .spotlight {
+            .content {
+                .buttons {
+                    button {
+                        font-size: 12px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**
+* _checklist - min-width: 640px and max-width: 1023px.
+*/
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+
+}
+
+/**
+* _checklist - min-width: 1024px and max-width: 1199px.
+*/
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .cars {
+        .car {
+            .buttons {
+                button {
+                    font-size: 8px !important;
+                }
+            }
+        }
+    }
+}
+
+/**
+* _checklist - min-width: 1200px and max-width: 1439px.
+*/
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+    .cars {
+        .car {
+            .buttons {
+                button {
+                    font-size: 11px !important;
+                }
+            }
+        }
+    }
+}
+
+/**
+* _checklist - min-width: 1440px.
+*/
+@media screen and (min-width: 1440px) {
+	.cars {
+        .car {
+            .buttons {
+                button {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+}

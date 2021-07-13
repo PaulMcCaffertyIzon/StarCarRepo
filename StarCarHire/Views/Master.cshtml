@@ -1,16 +1,19 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<Home>
 
 @using ClientDependency.Core.Mvc
 
 @{
     Layout = null;
 
-    Html.RequiresCss("/css/styles.css");
-    Html.RequiresCss("https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic");
-    Html.RequiresCss("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css"/>
 
-    Html.RequiresJs("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js");
-    Html.RequiresJs("https://use.fontawesome.com/releases/v5.15.3/js/all.js");
+   
+    <script src="https://kit.fontawesome.com/2695162819.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <link rel="stylesheet" href="~/assets/styles/custom.css">
 }
 
 
@@ -22,10 +25,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Star Car Hire</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
+    <link rel="icon" type="image/x-icon" href="~/assets/favicon.ico" />
 
 
 
@@ -34,13 +34,20 @@
 </head>
 <body>
 
-    @Html.Partial("~/Views/Partials/Navigation.cshtml")
-
     @RenderBody()
 
-    @Html.Partial("~/Views/Partials/Footer.cshtml")
-
     @Html.RenderJsHere()
+    
+    <!-- Required JavaScript. -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
+    
+    <!-- Custom JavaScript. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    
+    <script src="~/assets/scripts/functions.js"></script>
 
 </body>
 </html>

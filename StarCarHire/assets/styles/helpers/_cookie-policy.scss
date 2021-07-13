@@ -1,0 +1,101 @@
+/**
+* Hybrid
+* Starter Theme.
+* Created by Anonymous.
+*/
+
+/**
+* _cookie-policy - Small.
+*/
+.cookie-policy {
+	width: calc(100% - .625rem * 2);
+	max-width: 480px;
+	padding: .625rem;
+	left: .625rem;
+	bottom: .625rem;
+	position: fixed;
+	// background-color: $;
+	// box-shadow: 3px 3px 12px rgba($, .5);
+	z-index: 1;
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	p {
+		// color: $;
+
+		a {
+			display: inline-block;
+			// color: $;
+			text-decoration: line-through;
+
+			&:before {
+				// background-color: $;
+			}
+
+			&:after {
+				// background-color: $;
+			}
+		}
+
+		&:first-of-type {
+			// font-family: $;
+			// font-size: ;
+			// line-height: ;
+		}
+
+		&:last-of-type {
+			margin: 0;
+		}
+	}
+
+	.cookie-policy-close {
+		padding: 0px 0px 2px 0px;
+		margin: 1.5rem 0rem 0rem 0rem;
+		display: inline-block;
+		// border-bottom: 1px dashed $;
+		// color: $;
+		// font-family: $;
+	    // font-size: ;
+	    // font-weight: ;
+	    // font-style: ;
+	    // line-height: ;
+		cursor: pointer;
+	}
+}
+
+/**
+* _cookie-policy - Medium.
+*/
+@media screen and (min-width: 640px) {
+    .cookie-policy {
+    	width: calc(100% - .9375rem * 2);
+    	padding: .9375rem;
+    	left: .9375rem;
+    	bottom: .9375rem;
+    }
+}
+
+/**
+* _cookie-policy - Large.
+*/
+@media screen and (min-width: 1024px) {
+    
+}
+
+/**
+* _cookie-policy - XL.
+*/
+@media screen and (min-width: 1200px) {
+    
+}
+
+/**
+* _cookie-policy - XXL.
+*/
+@media screen and (min-width: 1440px) {
+    
+}

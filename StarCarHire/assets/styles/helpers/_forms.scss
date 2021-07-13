@@ -1,0 +1,374 @@
+/**
+* Hybrid
+* Starter Theme.
+* Created by Anonymous.
+*
+* Example Checkbox Text: By selecting this box you agree for us to contact you using the information provided above and to everything outlined in our Privacy Policy.
+*
+*/
+
+/**
+* _forms - Small.
+*/
+.frm_forms {
+	form {
+		.frm_form_fields {
+			fieldset {
+				padding: 0 !important;
+				
+				.frm_fields_container {
+					.frm_form_field {
+						margin: 0rem 0rem .625rem 0rem;
+
+						// label {
+
+						// }
+
+						input:not([type=checkbox]), select, textarea {
+							width: 100%;
+							// height: ;
+							padding: 0rem .625rem 0rem .625rem;
+							// background-color: ;
+							// border: ;
+							// border-radius: ;
+							// box-shadow: ;
+							// color: ;
+							// font-family: $;
+							// font-size: ;
+							// font-weight: ;
+							// font-style: ;
+							// line-height: ;
+
+							&:focus {
+								// background-color: ;
+								border: none;
+								box-shadow: none;
+							}
+						}
+
+						select {
+							padding: 0rem 1.875rem 0rem .625rem;
+						}
+
+						textarea {
+							// height: ;
+							padding: .625rem;
+							// line-height: ;
+						}
+
+						/*.frm_checkbox {
+							cursor: pointer;
+
+							label {
+								&[for=] {
+									width: 100% !important;
+									padding: 0px 0px 0px calc(15px + .625rem) !important;
+									margin: 0 !important;
+									position: relative;
+									// line-height: ;
+									text-indent: 0;
+
+									input[type=checkbox] {
+										width: 0;
+										height: 0;
+										top: 2.5px;
+										left: 0;
+										position: absolute;
+										opacity: 0;
+										cursor: pointer;
+
+										&:checked {
+											& ~ {
+												.hybrid-checkbox {
+													// background-color: $;
+												}
+											}
+										}
+									}
+
+									.hybrid-checkbox {
+										width: 15px;
+										height: 15px;
+										margin: 0rem .625rem 0rem 0rem;
+										top: 2.5px;
+										left: 0;
+										position: absolute;
+										display: block;
+										background-color: $white;
+										border: 1px solid $mediumGrey;
+										transition: .5s cubic-bezier(0.51, 0.18, 0, 0.88);
+									}
+								}
+							}
+						}*/
+
+						.frm_dropzone {
+							min-height: auto;
+							margin: 0;
+							// background-color: $;
+							border: none;
+							border-radius: 0;
+							// color: $;
+
+							.dz-message {
+								padding: .625rem;
+								margin: 0;
+								// background-color: $;
+								border: none;
+								border-radius: 0;
+
+								.frm_icon_font {
+									padding: 0rem 0rem 1rem 0rem;
+									// color: $;
+								}
+
+								.frm_upload_text, .frm_compact_text {
+									// color: $;
+									// font-family: $;
+									// font-size: ;
+									// font-weight: ;
+									// font-style: ;
+									// line-height: ;
+								}
+
+								.frm_small_text {
+									// color: $;
+									// font-family: $;
+									// font-size: ;
+									// font-weight: ;
+									// font-style: ;
+									// line-height: ;
+									text-transform: capitalize;
+								}
+							}
+
+							.dz-preview {
+								padding: .625rem;
+								display: flex;
+
+								.dz-image {
+									width: 25%;
+									height: auto;
+									margin: 0;
+									float: left;
+
+									img {
+										width: 100%;
+										height: auto;
+										max-height: none;
+									}
+								}
+
+								.dz-column {
+									width: 75%;
+									height: auto;
+									padding: 0rem 0rem 0rem calc(1rem - 5px);
+									margin: 0;
+									left: 5px;
+									position: relative;
+									display: flex;
+									flex-direction: column;
+									justify-content: center;
+									float: right;
+
+									.dz-details {
+										margin: 0;
+										display: flex;
+										align-items: center;
+										// color: $;
+										// font-family: $;
+										// font-size: ;
+										// font-weight: ;
+										// font-style: ;
+										// line-height: ;
+
+										.dz-filename {
+											width: calc(100% - 20px);
+											max-width: none;
+											padding: 0;
+    										text-overflow: ellipsis;
+										}
+
+										.dz-size {
+											display: none;
+										}
+
+										.dz-remove {
+											// color: $;
+											font-size: 20px;
+										}
+									}
+
+									.dz-progress {
+										margin: 1rem 0rem 0rem 0rem;
+										// background: $ !important;
+										border-radius: 0;
+
+										.dz-upload {
+											// background: $;
+										}
+									}
+								}
+							}
+						}
+
+						.frm_error {
+							margin: 5px 0px 0px 0px;
+							// color: ;
+							// font-family: $;
+							// font-size: ;
+							// font-weight: ;
+							// font-style: ;
+							// line-height: ;
+						}
+
+						// @include placeholder {
+						// 	color: ;
+						// }
+					}
+
+					.frm_submit {
+						.frm_button_submit {
+							/* .materialize-button code should be placed here. */
+						}
+					}
+				}
+			}
+		}
+
+		.frm_error_style {
+			padding: 0 !important;
+			// margin:  !important;
+			background-color: transparent !important;
+			border: none !important;
+			border-radius: 0 !important;
+			// color: $;
+			// font-family: $;
+			// font-size: ;
+			// font-weight: ;
+			// font-style: ;
+			// line-height: ;
+
+			p {
+				// margin:  !important;
+				// color:  !important;
+				// font-size:  !important;
+				// line-height:  !important;
+			}
+		}
+	}
+
+	.frm_message {
+		padding: 0 !important;
+		// margin:  !important;
+		background-color: transparent !important;
+		border: none !important;
+		border-radius: 0 !important;
+		// color: $;
+		// font-family: $;
+		// font-size: ;
+		// font-weight: ;
+		// font-style: ;
+		// line-height: ;
+
+		p {
+			// margin:  !important;
+			// color:  !important;
+			// font-size:  !important;
+			// line-height:  !important;
+		}
+	}
+}
+
+/**
+* _forms - Medium.
+*/
+@media screen and (min-width: 640px) {
+    .frm_forms {
+		form {
+			.frm_form_fields {
+				fieldset {
+					.frm_fields_container {
+						.frm_form_field {
+							margin: 0rem 0rem .9375rem 0rem;
+
+							input:not([type=checkbox]) {
+								padding: 0rem .9375rem 0rem .9375rem;
+							}
+
+							select {
+								padding: 0rem 1.875rem 0rem .9375rem;
+							}
+
+							textarea {
+								padding: .9375rem;
+							}
+
+							/*.frm_checkbox {
+								label {
+									&[for=] {
+										padding: 0px 0px 0px calc(15px + .9375rem) !important;
+
+										.hybrid-checkbox {
+											padding: 0rem .9375rem 0rem 0rem;
+										}
+									}
+								}
+							}*/
+
+							.frm_dropzone {
+								.dz-message,
+								.dz-preview {
+									padding: .9375rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/**
+* _forms - Large.
+*/
+@media screen and (min-width: 1024px) {
+    /*.frm_forms {
+		form {
+			.frm_form_fields {
+				fieldset {
+					.frm_fields_container {
+						.frm_form_field {
+							.frm_checkbox {
+								&:hover {
+									label {
+										&[for=] {
+											.hybrid-checkbox {
+												// background-color: rgba($, .25);
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}*/
+}
+
+/**
+* _forms - XL.
+*/
+@media screen and (min-width: 1200px) {
+    
+}
+
+/**
+* _forms - XXL.
+*/
+@media screen and (min-width: 1440px) {
+    
+}

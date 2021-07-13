@@ -1,0 +1,93 @@
+/**
+* Hybrid
+* Starter Theme.
+* Created by Anonymous.
+*/
+
+/**
+* _footer - Small.
+*/
+.footer {
+    .company-logo {
+        margin: 0rem 0rem 1.875rem 0rem;
+        display: inline-block;
+
+        img {
+            width: 120px;
+        }
+    }
+
+    p {
+        color: $white;
+        font-family: 'Segoe UI';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .text-link {
+        padding: 0;
+        display: inline-block;
+        color: $white;
+        font-family: 'Segoe UI';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+
+        &:before, &:after {
+            top: 100%;
+        }
+
+        &:before {
+            background-color: rgba($white, .3);
+        }
+    
+        &:after {
+            background-color: rgba($white, 1);
+        }
+    }
+
+    .columns {
+        .column {
+            .text-link {
+                margin: 0rem 0rem .625rem 0rem;
+                display: table;
+                line-height: 24px;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+/**
+* _footer - Medium.
+*/
+@media screen and (min-width: 640px) {
+    
+}
+
+/**
+* _footer - Large.
+*/
+@media screen and (min-width: 1024px) {
+    
+}
+
+/**
+* _footer - XL.
+*/
+@media screen and (min-width: 1200px) {
+    
+}
+
+/**
+* _footer - XXL.
+*/
+@media screen and (min-width: 1440px) {
+    
+}

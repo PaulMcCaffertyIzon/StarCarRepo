@@ -1,0 +1,57 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<Results>
+
+@using ClientDependency.Core.Mvc
+
+@{
+    Layout = null;
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css"/>
+
+   
+    <script src="https://kit.fontawesome.com/2695162819.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <link rel="stylesheet" href="~/assets/styles/custom.css">
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Star Car Hire</title>
+    <link rel="icon" type="image/x-icon" href="~/assets/favicon.ico" />
+
+
+
+
+    @Html.RenderCssHere()
+</head>
+<body>
+    
+    @Html.Partial("~/Views/Partials/Navigation.cshtml")
+
+    @RenderBody()
+
+    @Html.RenderJsHere()
+    
+    @Html.Partial("~/Views/Partials/Footer.cshtml")
+    
+    <!-- Required JavaScript. -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
+    
+    <!-- Custom JavaScript. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    
+    <script src="~/assets/scripts/functions.js"></script>
+
+</body>
+</html>
