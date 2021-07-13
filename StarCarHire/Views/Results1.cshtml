@@ -1,0 +1,307 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<Results>
+@{
+	Layout = "Main.cshtml";
+}
+
+@* the fun starts here *@
+
+<main class="grid-container full padding-top padding-bottom wow fadeIn" data-wow-delay=".1s">
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x filters">
+                    <div class="small-12 medium-6 cell">
+                        <button>
+                            <i class="fal fa-filter"></i>
+                        </button>
+                        <button>
+                            <i class="fal fa-clipboard-list-check"></i>
+                        </button>
+                        <span>Add itinerary to see your prices.</span>
+                    </div>
+                    <div class="small-12 medium-6 cell hybrid-flex-md hybrid-flex-he-md">
+                        <div class="price">
+                            <div class="explanation hybrid-flex-sm">
+                                <span><strong>Price Range</strong></span>
+                                <span>£[lowest]</span>
+                                <span>£[highest]</span>
+                            </div>
+                            <div class="slider" data-slider data-initial-start="0" data-initial-end="100">
+                                <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                                <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                                <span class="slider-fill" data-slider-fill></span>
+                                <input type="hidden"/>
+                                <input type="hidden"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                    <div class="cell">
+                        <p>BT12 3AB</p>
+                    </div>
+                </div>
+                <div class="grid-x grid-margin-x grid-margin-y cars">
+                    <div class="small-12 medium-6 large-3 cell car wow fadeIn" data-wow-delay=".2s">
+                        <div class="relative image">
+                            <div class="absolute text">
+                                <span>Admin Rank #1</span>
+                            </div>
+                            <div class="absolute hybrid-flex-sm boxes">
+                                <div class="box one hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <i class="fal fa-car-side"></i>
+                                    <span>&nbsp;&nbsp;+&nbsp;&nbsp;</span>
+                                    <i class="fal fa-car-side"></i>
+                                </div>
+                                <div class="box two hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <span>Save up to 15%!</span>
+                                </div>
+                            </div>
+                            <img class="wow zoomOut" src="assets/images/thumbnail.jpg" data-wow-delay=".3s"/>
+                        </div>
+                        <div class="content">
+                            <h3>Car Title</h3>
+                            <p>Car Description</p>
+                            <hr>
+                            <span>£ (add itenary for pricing)</span>
+                            <hr>
+                        </div>
+                        <div class="buttons hybrid-flex-sm">
+                            <button type="button">More Info</button>
+                            <button type="button">Add To Shortlist</button>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-6 large-3 cell car wow fadeIn" data-wow-delay=".3s">
+                        <div class="relative image">
+                            <div class="absolute text">
+                                <span>Admin Rank #1</span>
+                            </div>
+                            <div class="absolute hybrid-flex-sm boxes">
+                                <div class="box one hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <i class="fal fa-car-side"></i>
+                                    <span>&nbsp;&nbsp;+&nbsp;&nbsp;</span>
+                                    <i class="fal fa-car-side"></i>
+                                </div>
+                                <div class="box two hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <span>Save up to 15%!</span>
+                                </div>
+                            </div>
+                            <img class="wow zoomOut" src="assets/images/thumbnail.jpg" data-wow-delay=".4s"/>
+                        </div>
+                        <div class="content">
+                            <h3>Car Title</h3>
+                            <p>Car Description</p>
+                            <hr>
+                            <span>£ (add itenary for pricing)</span>
+                            <hr>
+                        </div>
+                        <div class="buttons hybrid-flex-sm">
+                            <button type="button">More Info</button>
+                            <button type="button">Add To Shortlist</button>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-6 large-3 cell car wow fadeIn" data-wow-delay=".4s">
+                        <div class="relative image">
+                            <div class="absolute text">
+                                <span>Admin Rank #1</span>
+                            </div>
+                            <div class="absolute hybrid-flex-sm boxes">
+                                <div class="box one hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <i class="fal fa-car-side"></i>
+                                    <span>&nbsp;&nbsp;+&nbsp;&nbsp;</span>
+                                    <i class="fal fa-car-side"></i>
+                                </div>
+                                <div class="box two hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <span>Save up to 15%!</span>
+                                </div>
+                            </div>
+                            <img class="wow zoomOut" src="assets/images/thumbnail.jpg" data-wow-delay=".5s"/>
+                        </div>
+                        <div class="content">
+                            <h3>Car Title</h3>
+                            <p>Car Description</p>
+                            <hr>
+                            <span>£ (add itenary for pricing)</span>
+                            <hr>
+                        </div>
+                        <div class="buttons hybrid-flex-sm">
+                            <button type="button">More Info</button>
+                            <button type="button">Add To Shortlist</button>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-6 large-3 cell car wow fadeIn" data-wow-delay=".5s">
+                        <div class="relative image">
+                            <div class="absolute text">
+                                <span>Admin Rank #1</span>
+                            </div>
+                            <div class="absolute hybrid-flex-sm boxes">
+                                <div class="box one hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <i class="fal fa-car-side"></i>
+                                    <span>&nbsp;&nbsp;+&nbsp;&nbsp;</span>
+                                    <i class="fal fa-car-side"></i>
+                                </div>
+                                <div class="box two hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <span>Save up to 15%!</span>
+                                </div>
+                            </div>
+                            <img class="wow zoomOut" src="assets/images/thumbnail.jpg" data-wow-delay=".6s"/>
+                        </div>
+                        <div class="content">
+                            <h3>Car Title</h3>
+                            <p>Car Description</p>
+                            <hr>
+                            <span>£ (add itenary for pricing)</span>
+                            <hr>
+                        </div>
+                        <div class="buttons hybrid-flex-sm">
+                            <button type="button">More Info</button>
+                            <button type="button">Add To Shortlist</button>
+                        </div>
+                    </div>
+                    <div class="small-12 cell spotlight wow fadeIn">
+                        <div class="grid-x grid-margin-x">
+                            <div class="small-12 large-3 cell content">
+                                <h6>Vehicle Spotlight</h6>
+                                <h3>Car Title</h3>
+                                <p>Car Description</p>
+                                <h4>
+                                    <span>from</span>
+                                    £xxx
+                                </h4>
+                                <div class="buttons hybrid-flex-sm">
+                                    <button type="button">More Info</button>
+                                    <button type="button">Add To Shortlist</button>
+                                </div>
+                                <hr class="hide-for-large">
+                            </div>
+                            <div class="small-12 large-8 large-offset-1 cell hybrid-flex-md images">
+                                <div class="image">
+                                    <img class="wow zoomOut" src="assets/images/thumbnail.jpg" alt="Spotlight Image" data-wow-delay=".1s"/>
+                                </div>
+                                <div class="image">
+                                    <img class="wow zoomOut" src="assets/images/thumbnail.jpg" alt="Spotlight Image" data-wow-delay=".2s"/>
+                                </div>
+                                <div class="image">
+                                    <img class="wow zoomOut" src="assets/images/thumbnail.jpg" alt="Spotlight Image" data-wow-delay=".3s"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-6 large-3 cell car wow fadeIn" data-wow-delay=".2s">
+                        <div class="relative image">
+                            <div class="absolute text">
+                                <span>Admin Rank #1</span>
+                            </div>
+                            <div class="absolute hybrid-flex-sm boxes">
+                                <div class="box one hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <i class="fal fa-car-side"></i>
+                                    <span>&nbsp;&nbsp;+&nbsp;&nbsp;</span>
+                                    <i class="fal fa-car-side"></i>
+                                </div>
+                                <div class="box two hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <span>Save up to 15%!</span>
+                                </div>
+                            </div>
+                            <img class="wow zoomOut" src="assets/images/thumbnail.jpg" data-wow-delay=".3s"/>
+                        </div>
+                        <div class="content">
+                            <h3>Car Title</h3>
+                            <p>Car Description</p>
+                            <hr>
+                            <span>£ (add itenary for pricing)</span>
+                            <hr>
+                        </div>
+                        <div class="buttons hybrid-flex-sm">
+                            <button type="button">More Info</button>
+                            <button type="button">Add To Shortlist</button>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-6 large-3 cell car wow fadeIn" data-wow-delay=".3s">
+                        <div class="relative image">
+                            <div class="absolute text">
+                                <span>Admin Rank #1</span>
+                            </div>
+                            <div class="absolute hybrid-flex-sm boxes">
+                                <div class="box one hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <i class="fal fa-car-side"></i>
+                                    <span>&nbsp;&nbsp;+&nbsp;&nbsp;</span>
+                                    <i class="fal fa-car-side"></i>
+                                </div>
+                                <div class="box two hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <span>Save up to 15%!</span>
+                                </div>
+                            </div>
+                            <img class="wow zoomOut" src="assets/images/thumbnail.jpg" data-wow-delay=".4s"/>
+                        </div>
+                        <div class="content">
+                            <h3>Car Title</h3>
+                            <p>Car Description</p>
+                            <hr>
+                            <span>£ (add itenary for pricing)</span>
+                            <hr>
+                        </div>
+                        <div class="buttons hybrid-flex-sm">
+                            <button type="button">More Info</button>
+                            <button type="button">Add To Shortlist</button>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-6 large-3 cell car wow fadeIn" data-wow-delay=".4s">
+                        <div class="relative image">
+                            <div class="absolute text">
+                                <span>Admin Rank #1</span>
+                            </div>
+                            <div class="absolute hybrid-flex-sm boxes">
+                                <div class="box one hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <i class="fal fa-car-side"></i>
+                                    <span>&nbsp;&nbsp;+&nbsp;&nbsp;</span>
+                                    <i class="fal fa-car-side"></i>
+                                </div>
+                                <div class="box two hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <span>Save up to 15%!</span>
+                                </div>
+                            </div>
+                            <img class="wow zoomOut" src="assets/images/thumbnail.jpg" data-wow-delay=".5s"/>
+                        </div>
+                        <div class="content">
+                            <h3>Car Title</h3>
+                            <p>Car Description</p>
+                            <hr>
+                            <span>£ (add itenary for pricing)</span>
+                            <hr>
+                        </div>
+                        <div class="buttons hybrid-flex-sm">
+                            <button type="button">More Info</button>
+                            <button type="button">Add To Shortlist</button>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-6 large-3 cell car wow fadeIn" data-wow-delay=".5s">
+                        <div class="relative image">
+                            <div class="absolute text">
+                                <span>Admin Rank #1</span>
+                            </div>
+                            <div class="absolute hybrid-flex-sm boxes">
+                                <div class="box one hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <i class="fal fa-car-side"></i>
+                                    <span>&nbsp;&nbsp;+&nbsp;&nbsp;</span>
+                                    <i class="fal fa-car-side"></i>
+                                </div>
+                                <div class="box two hybrid-flex-sm hybrid-flex-vc-sm">
+                                    <span>Save up to 15%!</span>
+                                </div>
+                            </div>
+                            <img class="wow zoomOut" src="assets/images/thumbnail.jpg" data-wow-delay=".6s"/>
+                        </div>
+                        <div class="content">
+                            <h3>Car Title</h3>
+                            <p>Car Description</p>
+                            <hr>
+                            <span>£ (add itenary for pricing)</span>
+                            <hr>
+                        </div>
+                        <div class="buttons hybrid-flex-sm">
+                            <button type="button">More Info</button>
+                            <button type="button">Add To Shortlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
