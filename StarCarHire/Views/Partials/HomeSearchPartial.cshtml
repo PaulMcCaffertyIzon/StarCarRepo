@@ -1,0 +1,27 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+<form action="" method="">
+    <div class="grid-x grid-padding-x">
+        <div class="small-12 medium-6 cell">
+            @Html.LabelFor(m => m.Postcode)
+            <label for="postcode">Enter Your Postcode:</label>
+                 @Html.TextAreaFor(model => model.Postcode, 
+                 new 
+                 { 
+                    @id = "postcode",
+                    @class = "form-control",
+                    @required = "required",
+                    @placeholder = "BT12 3AB"
+                 })
+                        <p><input type="submit" value="Submit" /></p>
+            <!--<input id="postcode" name="postcode" type="text" placeholder="BT12 3AB"/>-->
+        </div>
+        <div class="small-12 medium-6 cell">
+            <label for="vehicle">I'm Hiring A Vehicle For:</label>
+            <div class="hybrid-flex-sm space-between">
+                <button id="vehicle" class="wedding" name="vehicle" type="submit">Wedding</button>
+                <button id="vehicle" class="media" name="vehicle" type="submit">Media/Event</button>
+            </div>
+        </div>
+    </div>
+</form>

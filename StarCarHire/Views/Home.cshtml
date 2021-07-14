@@ -1,6 +1,7 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage 
 
 @using Umbraco.Web.PublishedModels
+
 
 
 @{
@@ -18,21 +19,9 @@
                 </div>
                 <div class="grid-x grid-padding-x">
                     <div class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 cell wow fadeIn" data-wow-delay=".2s">
-                        <form action="" method="">
-                            <div class="grid-x grid-padding-x">
-                                <div class="small-12 medium-6 cell">
-                                    <label for="postcode">Enter Your Postcode:</label>
-                                    <input id="postcode" name="postcode" type="text" placeholder="BT12 3AB"/>
-                                </div>
-                                <div class="small-12 medium-6 cell">
-                                    <label for="vehicle">I'm Hiring A Vehicle For:</label>
-                                    <div class="hybrid-flex-sm space-between">
-                                        <button id="vehicle" class="wedding" name="vehicle" type="submit">Wedding</button>
-                                        <button id="vehicle" class="media" name="vehicle" type="submit">Media/Event</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+
+                        @Html.Partial("~/Views/Partials/HomeSearchPartial.cshtml")
+                
                     </div>
                 </div>
                 <div class="grid-x grid-padding-x disclaimer wow fadeIn" data-wow-delay=".3s">
