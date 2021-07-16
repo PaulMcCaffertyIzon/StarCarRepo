@@ -1,9 +1,5 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 
-@using Umbraco.Web.PublishedModels
-
-
-
 @{
     Layout = "Master.cshtml";
 }
@@ -20,8 +16,8 @@
                 <div class="grid-x grid-padding-x">
                     <div class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 cell wow fadeIn" data-wow-delay=".2s">
 
-                        @Html.Partial("~/Views/Partials/HomeSearchPartial.cshtml")
-                
+                        @{ Html.RenderAction("Render", "Home"); }
+
                     </div>
                 </div>
                 <div class="grid-x grid-padding-x disclaimer wow fadeIn" data-wow-delay=".3s">

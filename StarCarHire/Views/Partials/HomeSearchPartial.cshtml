@@ -1,17 +1,19 @@
-﻿<form action="" method="">
+﻿@model StarCarHire.Models.HomeModel
+@using (Html.BeginUmbracoForm("Submit", "Home"))
+{
+<form>
     <div class="grid-x grid-padding-x">
         <div class="small-12 medium-6 cell">
-            @Html.LabelFor(m => m.Postcode)
             <label for="postcode">Enter Your Postcode:</label>
-                 @Html.TextAreaFor(model => model.Postcode, 
-                 new 
-                 { 
-                    @id = "postcode",
-                    @class = "form-control",
-                    @required = "required",
-                    @placeholder = "BT12 3AB"
-                 })
-                        <p><input type="submit" value="Submit" /></p>
+            @Html.TextBoxFor(m => m.Postcode,
+         new
+         {
+             @id = "postcode",
+             @class = "form-control",
+             @required = "required",
+             @placeholder = "BT12 3AB",
+             @name = "postcode"
+         })
             <!--<input id="postcode" name="postcode" type="text" placeholder="BT12 3AB"/>-->
         </div>
         <div class="small-12 medium-6 cell">
@@ -23,3 +25,4 @@
         </div>
     </div>
 </form>
+}

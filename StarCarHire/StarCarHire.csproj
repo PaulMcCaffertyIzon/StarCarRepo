@@ -441,7 +441,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\ResultsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\ResultsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -474,6 +475,7 @@
     <Content Include="Views\Partials\Footer.cshtml" />
     <Content Include="Views\Main.cshtml" />
     <Content Include="Views\Results.cshtml" />
+    <Content Include="Views\Partials\HomeSearchPartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
