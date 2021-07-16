@@ -16,7 +16,6 @@ namespace StarCarHire.Controllers
         public ActionResult Render()
         {
             var homeModel = new HomeModel();
-            var postCode = Request.Form["postcode"];
 
             return PartialView("HomeSearchPartial", homeModel);
 
@@ -24,10 +23,34 @@ namespace StarCarHire.Controllers
 
         [HttpPost]
         [ValidateUmbracoFormRouteString]
-        public ActionResult Submit(HomeModel model)
-        {
+        public ActionResult Submit(HomeModel model, string vehicle)
+        { 
+
             var contentService = Services.ConsentService;
-            var parentId = new Guid("");            
+            var postCode = Request.Form["postcode"];
+
+            model.Postcode = postCode;
+
+            switch(vehicle)
+            {
+                case "Weddings":
+
+                    var vehicleFor = "Weddings";
+                    Console.WriteLine(vehicleFor);
+                    break;
+
+                case "Media/TV":
+
+                    vehicleFor = "Media/TV";
+                    Console.WriteLine(vehicleFor);
+                    break;
+
+                default:
+
+                    return View();
+            }
+
+
 
             return RedirectToCurrentUmbracoPage();
         }

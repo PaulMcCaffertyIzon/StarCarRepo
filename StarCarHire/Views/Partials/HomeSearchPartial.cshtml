@@ -1,7 +1,7 @@
 ﻿@model StarCarHire.Models.HomeModel
-@using (Html.BeginUmbracoForm("Submit", "Home"))
+@using (Html.BeginUmbracoForm("Submit", "Home", FormMethod.Post))
 {
-<form>
+
     <div class="grid-x grid-padding-x">
         <div class="small-12 medium-6 cell">
             <label for="postcode">Enter Your Postcode:</label>
@@ -19,10 +19,10 @@
         <div class="small-12 medium-6 cell">
             <label for="vehicle">I'm Hiring A Vehicle For:</label>
             <div class="hybrid-flex-sm space-between">
-                <input type="submit" id="vehicle" class="wedding" value="Wedding" name="vehicle" />
-                <input type="submit" id="vehicle" class="media" name="vehicle" />
+                <button id="vehicle" class="wedding" name="vehicle" type="submit">Wedding</button>
+                <button id="vehicle" class="media" name="vehicle" type="submit">Media/Event</button>
             </div>
         </div>
     </div>
-</form>
+
 }

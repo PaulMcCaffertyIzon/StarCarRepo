@@ -31,7 +31,7 @@ namespace StarCarHire.Models
 
         public string VehicleAdditionalInfo { get; set; }
 
-        public string VehicleAvailableFor { get; set; }
+        public string VehicleEvents { get; set; }
 
         public decimal VehicleHalfDayPrice { get; set; }
 
