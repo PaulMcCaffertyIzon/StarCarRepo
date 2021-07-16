@@ -444,6 +444,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\ResultsModel.cs" />
+    <Compile Include="Models\VehicleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
