@@ -477,6 +477,7 @@
     <Content Include="Views\Main.cshtml" />
     <Content Include="Views\Results.cshtml" />
     <Content Include="Views\Partials\HomeSearchPartial.cshtml" />
+    <Content Include="Views\Partials\ResultsSelectionPartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
