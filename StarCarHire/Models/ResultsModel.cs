@@ -7,7 +7,7 @@ using Umbraco.Web.Models;
 
 namespace StarCarHire.Models
 {
-    public class ContentModel
+    public class ResultsModel
     {
         [Required]
         [MaxLength(8)]

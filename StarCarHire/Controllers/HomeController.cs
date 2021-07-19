@@ -23,32 +23,13 @@ namespace StarCarHire.Controllers
 
         [HttpPost]
         [ValidateUmbracoFormRouteString]
-        public ActionResult Submit(HomeModel model, string vehicle)
+        public ActionResult Submit(HomeModel model, string button)
         { 
 
             var contentService = Services.ConsentService;
             var postCode = Request.Form["postcode"];
 
             model.Postcode = postCode;
-
-            switch(vehicle)
-            {
-                case "Weddings":
-
-                    var vehicleFor = "Weddings";
-                    Console.WriteLine(vehicleFor);
-                    break;
-
-                case "Media/TV":
-
-                    vehicleFor = "Media/TV";
-                    Console.WriteLine(vehicleFor);
-                    break;
-
-                default:
-
-                    return View();
-            }
 
 
 
